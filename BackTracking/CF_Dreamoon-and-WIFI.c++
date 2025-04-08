@@ -50,13 +50,26 @@ typedef vector<vd> vvd;
 typedef vector<string> vs;
 typedef vector<vs> vvs;
 const int N = 2e5 + 10, OO = 0x3f3f3f3f; //~1e9
+long double abs1 = 1e-9;
+int doubleCmp (double a, double b) {
+    if(a - b > abs1) 
+        return 1;               // a > b
+    else if (a-b < -abs1)
+        return -1;              //a < b
+    else    
+        return 0;               // a = b
+}
 // =================================================================================================================================
 // link --> https://codeforces.com/problemset/problem/476/B
 
-vi res;
+int senderMessage;
+int trueMessage = 0;
+int allMessages = 0;
 void solveHelper(string s, int i, int sum) {
     if(i == s.size()) {
-        res.push_back(sum);
+        if(sum == senderMessage)
+            ++trueMessage;
+        ++allMessages;
         return;
     }
     
@@ -70,30 +83,13 @@ void solveHelper(string s, int i, int sum) {
 }
 
 
-long double abs1 = 1e-9;
-int doubleCmp (double a, double b) {
-    if(a - b > abs1) 
-        return 1;               // a > b
-    else if (a-b < -abs1)
-        return -1;              //a < b
-    else    
-        return 0;               // a = b
-}
-
-
 double solve(string& a, string& b){
-    solveHelper(a, 0, 0);
-    int actual = res[0];
-    res.clear();
-    solveHelper(b, 0, 0);
-
-    int cntActual = 0;
-
-    for(int& i : res) 
-        if(i == actual)   
-            cntActual++;
+    senderMessage = 0;
+    for(char i : a) 
+        i == '+' ? ++senderMessage : --senderMessage;
     
-    return cntActual/(double)res.size();
+    solveHelper(b, 0, 0);
+    return trueMessage/(double)(allMessages);
 }
 
 int main()
