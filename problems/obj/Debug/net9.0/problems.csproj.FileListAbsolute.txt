@@ -1,0 +1,14 @@
+D:\icpcLevel2_PS\Rate1200\problems\bin\Debug\net9.0\problems.exe
+D:\icpcLevel2_PS\Rate1200\problems\bin\Debug\net9.0\problems.deps.json
+D:\icpcLevel2_PS\Rate1200\problems\bin\Debug\net9.0\problems.runtimeconfig.json
+D:\icpcLevel2_PS\Rate1200\problems\bin\Debug\net9.0\problems.dll
+D:\icpcLevel2_PS\Rate1200\problems\bin\Debug\net9.0\problems.pdb
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.GeneratedMSBuildEditorConfig.editorconfig
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.AssemblyInfoInputs.cache
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.AssemblyInfo.cs
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.csproj.CoreCompileInputs.cache
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.dll
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\refint\problems.dll
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.pdb
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\problems.genruntimeconfig.cache
+D:\icpcLevel2_PS\Rate1200\problems\obj\Debug\net9.0\ref\problems.dll
